@@ -1,0 +1,35 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.nomor1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author reyhan rahmatsaputra
+ */
+public class Nomor1 {
+
+    public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan kalimat: ");
+        String kalimat = scanner.nextLine();
+
+        System.out.print("Masukkan huruf yang ingin dicari: ");
+        char hurufCari = scanner.next().charAt(0);
+
+        int jumlah = 0;
+
+        for (int i = 0; i < kalimat.length(); i++) {
+            if (kalimat.charAt(i) == hurufCari) {
+                jumlah++;
+            }
+        }
+
+        System.out.println("Jumlah huruf '" + hurufCari + "' dalam kalimat tersebut adalah: " + jumlah);
+    }
+}    
+
