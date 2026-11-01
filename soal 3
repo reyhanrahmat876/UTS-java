@@ -1,0 +1,25 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.belajar2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author reyhan rahmatsaputra
+ */
+public class Belajar2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan kalimat: ");
+        String kalimat = scanner.nextLine();
+
+        int jumlahKarakter = kalimat.length();
+
+        System.out.println("Jumlah total karakter dalam kalimat tersebut adalah: " + jumlahKarakter);
+        
+    }
+}
