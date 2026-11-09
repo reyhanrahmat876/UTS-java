@@ -1,0 +1,14 @@
+Scanner anka = new Scanner(System.in);
+        System.out.print("Masukkan jumlah suku (n): ");
+        int n = anka.nextInt();
+        int angka = 5;
+        System.out.print("Hasil: ");
+        for (int i = 1; i <= n; i++) {
+            System.out.print(angka + " ");
+            if (i % 2 != 0) {
+                angka -= 3;
+            } else {
+                angka += 5;
+            }
+        }
+        System.out.println();
