@@ -1,0 +1,11 @@
+int n_awal = 1;
+        int n_akhir = 50;
+        int pembagi = 5;
+
+        System.out.println("Bilangan yang habis dibagi " + pembagi + " dari " + n_awal + " hingga " + n_akhir + ":");
+
+        for (int i = n_awal; i <= n_akhir; i++) {
+            if (i % pembagi == 0) {
+                System.out.print(i + " ");
+            }
+        }
