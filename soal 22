@@ -1,0 +1,13 @@
+Scanner anka = new Scanner(System.in);
+        System.out.print("Masukkan nilai n untuk faktorial: ");
+        int n = anka.nextInt();
+        long hasil = 1;
+        System.out.print("Hasil: " + n + "! = ");
+        for (int i = n; i >= 1; i--) {
+            hasil *= i;
+            System.out.print(i);
+            if (i > 1) {
+                System.out.print(" x ");
+            }
+        }
+        System.out.println(" = " + hasil);
