@@ -1,0 +1,17 @@
+int n_awal = 1900;
+        int n_akhir = 2050;
+        int targetDigitAkhir = 4; 
+
+        System.out.println("Tahun kabisat dari " + n_awal + " hingga " + n_akhir + " dengan angka terakhir " + targetDigitAkhir + ":");
+
+        for (int i = n_awal; i <= n_akhir; i++) {
+            
+            boolean isKabisat = (i % 4 == 0 && i % 100 != 0) || (i % 400 == 0);
+            
+            
+            boolean isDigitSesuai = (i % 10 == targetDigitAkhir);
+
+            if (isKabisat && isDigitSesuai) {
+                System.out.println(i);
+            }
+        }
