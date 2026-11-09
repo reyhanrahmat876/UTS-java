@@ -1,0 +1,19 @@
+Scanner anka = new Scanner(System.in);
+        System.out.print("Masukkan nilai maksimum Fibonacci: ");
+        int max = anka.nextInt();
+        int f1 = 0, f2 = 1;
+        System.out.print("Hasil: ");
+        if (max >= 0) {
+            System.out.print(f1);
+        }
+        if (max >= 1) {
+            System.out.print(", " + f2);
+        }
+        int f3 = f1 + f2;
+        while (f3 <= max) {
+            System.out.print(", " + f3);
+            f1 = f2;
+            f2 = f3;
+            f3 = f1 + f2;
+        }
+        System.out.println();
