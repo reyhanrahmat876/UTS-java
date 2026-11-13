@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Soal47 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan n_awal  : ");
+        int nAwal = input.nextInt();
+        System.out.print("Masukkan n_akhir : ");
+        int nAkhir = input.nextInt();
+
+        long total = 0;
+        for (int i = nAwal; i <= nAkhir; i++) {
+            if (i % 2 == 0) {
+                total += i;
+            }
+        }
+        System.out.println("Total bilangan genap: " + total);
+        input.close();
+    }
+}
