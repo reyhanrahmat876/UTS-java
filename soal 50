@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Soal50 {
+    static boolean isPrima(int n) {
+        if (n < 2) return false;
+        for (int i = 2; i * i <= n; i++) {
+            if (n % i == 0) return false;
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan n_awal  : ");
+        int nAwal = input.nextInt();
+        System.out.print("Masukkan n_akhir : ");
+        int nAkhir = input.nextInt();
+
+        int jumlah = 0;
+        for (int i = nAwal; i <= nAkhir; i++) {
+            if (isPrima(i)) {
+                jumlah++;
+            }
+        }
+        System.out.println("Jumlah total bilangan prima: " + jumlah);
+        input.close();
+    }
+}
